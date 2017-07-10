@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="hintText">Enter amount in $</string>
+    <string name="buttonConvert">Convert</string>
+    <string name="inrtxt">INR</string>
+    <string name="eurtxt">EUR</string>
+    <string name="usdtxt">USD</string>
+    <string name="zero">00</string>
+    <string-array name="currency">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>INR</item>
+    </string-array>
+</resources>
