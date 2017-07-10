@@ -66,9 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 eur.setText("wait...");
                 inr.setText("wait...");
 
-                if(editText.getText().toString().trim().length() > 0 && !editText.getText().toString().trim().equals("."));
-                String textView = editText.getText().toString();
-                inputvalue = Double.parseDouble(textView);
+                if(editText.getText().toString().trim().length() > 0 && !editText.getText().toString().trim().equals(".")) {
+                    String textView = editText.getText().toString();
+                    inputvalue = Double.parseDouble(textView);
+                }
                 new Calculate().execute();
             }
         });
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return result;
             }
-            else if(index==3){
+            else if(index==2){
                 String uRL;
                 try {
                     uRL = getJson("http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22INRUSD,INREUR%22)&format=json&env=store://datatables.org/alltableswithkeys");
